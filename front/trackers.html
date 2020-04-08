@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Time Trackers</title>
+		<link rel="stylesheet" type="text/css" href="./tools/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./tools/css/trackers.css">
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="site-header sticky-top py-1 navbar navbar-expand-lg">
+		  <div class="container d-flex flex-column flex-md-row justify-content-between">
+		  	<div class="col-sm-2">
+		    	<button class="btn btn-outline-dark " data-toggle="modal" data-target="#new-task"><i class="fas fa-plus"></i>New Task</button>
+		  	</div>
+		  	<div class="col-sm-3 links">
+	        <a class="nav-link active go-tasks" href="#">Tasks <span class="sr-only">(current)</span></a>
+		      <a class="nav-link go-trackers" href="#">Time Trackers</a>
+		  	</div>
+		  	<div class="col-sm-4 container-time">
+		    	<a class="timer" data-seconds=0> <i class="fas fa-stopwatch-20 timer-icon"></i> 00:00:00 </a>
+		  	</div>
+		  	<div class="col-sm-3 container-start-time">
+		    	<button class="btn btn-outline-dark timetracker" disabled >Star Time-Tracker</button>
+		  	</div>
+		  </div>
+		</nav>
+		<!-- Nav Bar -->
+		<div class="container">
+			<div class="row">
+				<!-- Task container -->
+				<div class="col-sm-12 " id="tasks-container">
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="new-task" tabindex="-1" role="dialog" aria-labelledby="new-task-label" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="new-task-label">New Task</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="container">
+			        <div class="col-sm-12">
+			        	<form>
+								  <div class="form-group">
+								    <label for="name">Name</label>
+								    <input type="text" class="form-control" id="name" aria-describedby="name">
+								    <small id="emailHelp" class="form-text text-muted">required</small>
+								  </div>
+								  <div class="form-group">
+								    <label for="description" class="description-label">Description <small>(optional)</small></label>
+								    <textarea type="password" class="form-control" id="description"></textarea>
+								  </div>
+								</form>
+			        </div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary new-task-js" data-dismiss="modal">Save</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	 	<script type="text/javascript" src="./tools/js/jquery.js"></script>
+	 	<script type="text/javascript" src="./tools/js/bootstrap.min.js"></script>
+	 	<script type="text/javascript" src="./tools/js/all.js"></script>
+	 	<script type="text/javascript" src="./tools/js/trackers.js"></script>
+	</body>
+</html>

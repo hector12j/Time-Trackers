@@ -1,0 +1,112 @@
+.site-header {
+	background-color: #4F5D75;
+	margin-bottom: 15px;
+	height: 50px;
+}
+
+nav .btn {
+	background-color: #BFC0C0;
+	height: 40px;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+.site-header .links {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-header .btn svg {
+	margin-right: 10px;
+}
+
+.site-header .container-time {
+	display: flex;
+	justify-content: center;
+}
+
+.site-header .container-start-time{
+	display: flex;
+	justify-content: flex-end;	
+}
+
+.site-header .active {
+	color: #000;
+}
+
+.description-label {
+	cursor: pointer;
+}
+
+#tasks-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.danger {
+	background-color: #dc3545 !important;
+	color: white !important;
+}
+
+.task {
+	margin: 10px;
+	border: solid;
+	border-width: 1px;
+	min-width: 300px;
+	max-width: 400px;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	border-width: 3px;
+}
+
+.task h5{
+	align-self: center;
+}
+
+.task-text {
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+.task-title {
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.select {
+	background-color: #4F5D75 !important;
+	border-color: #5BA353;
+}
+
+.timer {
+	margin: 10px;
+	color: #fff !important;
+}
+
+.timer-icon {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.task-time {
+	margin: 10px;
+	border: solid;
+	border-width: 1px;
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	border-width: 3px;
+}
+
+.border-select {
+	background-color: #5BA353 !important;
+}
